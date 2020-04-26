@@ -1,10 +1,23 @@
-.App {
-  text-align: center;
+div {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  border: none;
+  padding: 5px;
+  border-radius: 50px;
+  color: #757575;
+}
+
+p {
+  margin: .5em 0;
+  /* text-align: left; */
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(246, 247, 249);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,17 +27,18 @@
 }
 
 .header {
-  background-color: #282c34;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: #282c34; */
 }
 
 .sky-blue {
-  color: #61dafb;
+  color: #17a5d7;
 }
 
 @keyframes App-logo-spin {
@@ -36,20 +50,104 @@
   }
 }
 
+/*****************************
+  Body styles START
+*****************************/
+
+.body {
+  width: 70%;
+  align-self: center;
+}
+
+.filters-container {
+
+}
+
+.filters {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filters-container .filter-container {
+  width: 48%;
+  /* margin: 0 10px; */
+}
+
+label {
+  text-align: left;
+  margin: 5px 0;
+  color: #949494;
+}
+
+.filters .filter-container select {
+  width: 100%;
+}
+
+.sort-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-icon {
+  background-color: #17a5d7;
+  border-radius: 100%;
+  color: #fff;
+  border: rgb(246, 247, 249) solid 5px;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/*****************************
+  Search Bar styles END
+*****************************/
+
+/*****************************
+  Search Bar styles START
+*****************************/
+
 .search-bar-container {
+  flex-direction: row;
+  width: 100%;
   margin: 10px auto;
+  justify-content: space-between;
+  background-color: #FFF;
+  border-radius: 100px;
+}
+
+.search-bar {
+  background: transparent;
+  border: none;
   padding: 10px;
-  background-color: rgb(246, 247, 249);
-  width: 80%;
+  width: 100%;
 }
 
 .search-icon {
   width: 20px;
-  color: #282c34;
+  padding: 10px;
+  background-color: #17a5d7;
+  border-radius: 100%;
+  color: #fff;
+  border: rgb(246, 247, 249) solid 5px;
 }
+
+/*****************************
+  Search Bar styles END
+*****************************/
+
+/*****************************
+  List styles START
+*****************************/
 
 .list-container {
   padding: 5px;
-  margin: 10px;
-  background: #c3edf8;
+    margin: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    border: solid 1px #e8e8e8;
 }
+
+/*****************************
+  List styles END
+*****************************/

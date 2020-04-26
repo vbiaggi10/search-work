@@ -18,7 +18,9 @@ const SearchBar: React.FC<Props> = ({ handleChange, value }) => {
         onChange={handleChange}
         value={value}
       />
+      <i className="fas fa-search search-icon"></i>
     </div>
+    
   );
 };
 

@@ -28,6 +28,7 @@ const getQuery = (type) => {
           }
           postedAt
           createdAt
+          userEmail
         }
       }
     `;
