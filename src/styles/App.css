@@ -13,9 +13,8 @@
   }
 }
 
-.App-header {
+.header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +23,7 @@
   color: white;
 }
 
-.App-link {
+.sky-blue {
   color: #61dafb;
 }
 
@@ -35,4 +34,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.search-bar-container {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgb(246, 247, 249);
+  width: 80%;
+}
+
+.search-icon {
+  width: 20px;
+  color: #282c34;
+}
+
+.list-container {
+  padding: 5px;
+  margin: 10px;
+  background: #c3edf8;
 }
