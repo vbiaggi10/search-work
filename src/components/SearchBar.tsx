@@ -14,7 +14,7 @@ const SearchBar: React.FC<Props> = ({ handleChange, value }) => {
         type="text"
         name=""
         id=""
-        placeholder="Buscar"
+        placeholder="Find your job, find yourself..."
         onChange={handleChange}
         value={value}
       />

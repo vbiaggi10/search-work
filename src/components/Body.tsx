@@ -21,9 +21,9 @@ const obj = {
   search: '',
 };
 
-interface Props { }
+interface Props {}
 
-const Body: React.FC<Props> = ({ }) => {
+const Body: React.FC<Props> = ({}) => {
   const [searchText, setSearchText] = useState<string>('');
   const [countries, setCountries] = useState<any>([]);
   const [companies, setCompanies] = useState<any>([]);
@@ -85,24 +85,36 @@ const Body: React.FC<Props> = ({ }) => {
 
   return (
     <div className="body">
-      <SearchBar value={searchText} handleChange={handleChange} />
-      <div className="filters-container">
-        <p>Filtrar por: </p>
-        <div className="filters">
-          <Select title="Pais" arr={countries} handleChange={handleChangeCountries} />
-          <Select title="Compania" arr={companies} handleChange={handleChangeCompanies} />
+      <div className="options-container">
+        <div className="col-s-12 col-7 option option-search-bar">
+          <SearchBar value={searchText} handleChange={handleChange} />
+        </div>
+        <div className="col-s-7 col-3 option filters-container">
+          <p className="option-title">Filter by: </p>
+          <div className="filters">
+            <Select title="Country" arr={countries} handleChange={handleChangeCountries} />
+            <Select title="Company" arr={companies} handleChange={handleChangeCompanies} />
+          </div>
+        </div>
+        <div className="col-s-3 col-1 option">
+          <p className="option-title">Sort by:</p>
+          <div className="sort-container">
+            <label htmlFor="">Posted date</label>
+            <a href="#" onClick={handleSort}>
+              <i className={`fas  fa-${options.sort !== 'desc' ? 'sort-down' : 'sort-up'} sort-icon`} />
+            </a>
+          </div>
         </div>
       </div>
 
-      <div>
-        <p>Ordenar por:</p>
-        <div className="sort-container">
-          <label htmlFor="">Fecha</label>
-          <a href="#" onClick={handleSort}><i className={`fas  fa-${options.sort !== 'desc' ? 'sort-down' : 'sort-up'} sort-icon`} /></a>
+      {worksList.length !== 0 ? (
+        <List data={worksList} />
+      ) : (
+        <div>
+          <p>So sorry!</p>
+          <p>No jobs found.</p>
         </div>
-        
-      </div>
-      <List data={worksList} />
+      )}
     </div>
   );
 };
