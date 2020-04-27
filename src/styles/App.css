@@ -233,6 +233,14 @@ label {
   width: 100%;
 }
 
+.filters .filter-container select:focus {
+  outline: none;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
 .sort-container {
   flex-direction: row;
   justify-content: center;
@@ -247,6 +255,15 @@ label {
   padding: 2px;
   width: 20px;
   height: 20px;
+}
+
+.sort-icon:hover{
+  background-color: #083f53;
+  color: #fff;
+
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*****************************
@@ -271,6 +288,14 @@ label {
   border: none;
   padding: 10px;
   width: 100%;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .search-icon {
@@ -300,6 +325,12 @@ label {
   align-self: center;
 }
 
+.list-container:hover {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
 .list-date {
   color: #949494;
   font-size: 12px;
@@ -325,6 +356,15 @@ label {
   width: fit-content;
   padding: 5px;
   border-radius: 50px;
+}
+
+.list-btn-container a:hover{
+  background-color: #083f53;
+  color: #fff;
+
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*****************************
