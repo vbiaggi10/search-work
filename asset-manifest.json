@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vbiaggi10/search-work/static/css/main.f0575d0e.chunk.css",
+    "main.js": "/vbiaggi10/search-work/static/js/main.9de19fa4.chunk.js",
+    "main.js.map": "/vbiaggi10/search-work/static/js/main.9de19fa4.chunk.js.map",
+    "runtime-main.js": "/vbiaggi10/search-work/static/js/runtime-main.cbe3d801.js",
+    "runtime-main.js.map": "/vbiaggi10/search-work/static/js/runtime-main.cbe3d801.js.map",
+    "static/js/2.48e32f20.chunk.js": "/vbiaggi10/search-work/static/js/2.48e32f20.chunk.js",
+    "static/js/2.48e32f20.chunk.js.map": "/vbiaggi10/search-work/static/js/2.48e32f20.chunk.js.map",
+    "index.html": "/vbiaggi10/search-work/index.html",
+    "precache-manifest.0421e84a516f7613a70754d83cbe08f8.js": "/vbiaggi10/search-work/precache-manifest.0421e84a516f7613a70754d83cbe08f8.js",
+    "service-worker.js": "/vbiaggi10/search-work/service-worker.js",
+    "static/css/main.f0575d0e.chunk.css.map": "/vbiaggi10/search-work/static/css/main.f0575d0e.chunk.css.map",
+    "static/js/2.48e32f20.chunk.js.LICENSE.txt": "/vbiaggi10/search-work/static/js/2.48e32f20.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbe3d801.js",
+    "static/js/2.48e32f20.chunk.js",
+    "static/css/main.f0575d0e.chunk.css",
+    "static/js/main.9de19fa4.chunk.js"
+  ]
+}
